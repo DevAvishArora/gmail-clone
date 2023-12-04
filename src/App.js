@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import { BrowserRouter as Router, Route, Link, Routes } from "react-router-dom";
+import { BrowserRouter as Router, Route,  Routes } from "react-router-dom";
 import "./App.css";
 import Header from "./Components/Header/Header";
 import Sidebar from "./Components/Sidebar/Sidebar";
@@ -28,7 +28,7 @@ function App() {
         );
       }
     });
-  }, []);
+  }, [dispatch]);
   return (
     <Router>
       {!user ? (
